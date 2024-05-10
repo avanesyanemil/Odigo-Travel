@@ -1,0 +1,51 @@
+.header__burger{
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger__line{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+}
+
+.burger__line-first{
+    top: 0;
+}
+
+.burger__line-second{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line-third{
+    bottom: 0;
+}
+
+.nav__close{
+    display: none;
+}
+
+.nav__close-line{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    
+    background-color: #fff;
+}
+
+.nav__close-line-first{
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.nav__close-line-second{
+    transform: translateY(-50%) rotate(-45deg);
+}

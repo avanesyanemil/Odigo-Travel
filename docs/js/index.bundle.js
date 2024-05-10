@@ -1,0 +1,1 @@
+!function(){const e=document.querySelector(".burger"),c=document.querySelector(".nav"),t=document.querySelector(".nav__close");e.addEventListener("click",(()=>{c.classList.add("nav-active")})),t.addEventListener("click",(()=>{c.classList.remove("nav-active")}))}();

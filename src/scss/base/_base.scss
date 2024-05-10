@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@400;700;900&display=swap');
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    font-size: 16px;
+    color: #fff;
+}
+
+.container{
+    max-width: 1090px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+
+.big-container{
+    max-width: 1292px;
+    padding:0 15px;
+    margin: 0 auto;
+    transform: translateY(-223px);
+
+    @media screen and (max-width:935px) {
+        transform: translateY(0);
+        padding: 0;
+    }
+}
+
+.title-1{
+    color: rgb(16, 39, 70);
+    font-size: 35px;
+    line-height: 42px;
+
+    @media screen and (max-width:767px) {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+.visually-hidden{
+    /* contain text within 1px box*/
+
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+
+    /*keep the layout*/
+    position: absolute;
+
+    /*remove any visible trace (e.g. background color) */
+    clip:rect(1px 1px 1px 1px);/*IE6 IE7*/
+    clip:rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%); /*browsers in the future*/
+
+    /*prevent the screen reader to skip spaces between words*/
+    white-space:nowrap;
+}
+
+.link{
+    color: rgb(0, 109, 254);
+    line-height: 24px;
+    padding-right: 59px;
+    background: url(../img/shape.svg) no-repeat 95% center;
+    transition: all 0.2s ease-in;
+
+    &:hover{
+        background: url(../img/shape.svg) no-repeat right center;
+    }
+}
+
+.none{
+    display: none;
+}
+

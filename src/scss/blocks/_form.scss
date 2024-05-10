@@ -1,0 +1,45 @@
+.form__info{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+
+    @media  screen and (max-width:935px) {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+.form__input{
+    max-width:297px;
+    background: url(../img/header/Oval.svg) no-repeat left 6px;
+    background-size: 20px;
+    border-bottom: 2px solid rgb(191, 192, 197);
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color:#fff;
+
+    &::placeholder{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}
+
+.form__btn{
+    background-color:#1B7DFF;
+    width: 171px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 15px 39px;
+    transition: all 0.2s ease-in;
+
+    &:hover, &:active, &:focus{
+        background-color: #6faaf8;
+        box-shadow: 0 0 40px rgba(162, 215, 246, 0.6);
+    }
+}

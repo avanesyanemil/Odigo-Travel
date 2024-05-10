@@ -20,6 +20,10 @@
     font-weight: 500;
     color:#fff;
 
+    @media screen and (max-width:935px) {
+        background: url(../img/header/Oval.svg) no-repeat left 1px;
+     }
+
     &::placeholder{
         color: rgb(255, 255, 255);
         font-size: 18px;

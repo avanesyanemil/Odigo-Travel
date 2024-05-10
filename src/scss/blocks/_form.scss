@@ -10,7 +10,7 @@
 }
 
 .form__input{
-    max-width:297px;
+    width: 297px;
     background: url(../img/header/Oval.svg) no-repeat left 6px;
     background-size: 20px;
     border-bottom: 2px solid rgb(191, 192, 197);
@@ -22,12 +22,16 @@
 
     @media screen and (max-width:935px) {
         background: url(../img/header/Oval.svg) no-repeat left 1px;
+        width:277px;
      }
 
     &::placeholder{
         color: rgb(255, 255, 255);
         font-size: 18px;
         font-weight: 500;
+        @media screen and (max-width:935px) {
+            font-size: 16px;
+         }
     }
 
 }
